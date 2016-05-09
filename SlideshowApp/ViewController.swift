@@ -14,11 +14,9 @@ class ViewController: UIViewController {
     
     var playFlag = false
     
-    /// 【変更】　クラスのプロパティとして宣言
     var timer : NSTimer!
     
     @IBAction func nstimer(sender: AnyObject) {
-        
         
         if playFlag{
             
@@ -26,13 +24,15 @@ class ViewController: UIViewController {
             
             playFlag = false
             
+            timer.invalidate()
+            
             // 処理止める時
+            
             
         } else {
             nstimer.setTitle("停止", forState: .Normal)
             
             playFlag = true
-            
             
             timer = NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: Selector("NexPic:"), userInfo: nil, repeats: true)
             
@@ -42,37 +42,10 @@ class ViewController: UIViewController {
             
             //処理始める時
             
-            
-            // 【変更】　大括弧が1つ多いので削除
-            //        }
-        }
+            }
         
     }
 
-
-        
-    /* var testButton: UIButton!
-    func configureButton() {
-        // ボタンのタイプを設定して作成
-        testButton.setTitle("再生", forState: .Normal)
-        // アクションの設定
-        testButton.addTarget(self, action: "push:", forControlEvents: .TouchUpInside)
-        // ボタンを画面に表示
-        self.view.addSubview(testButton)
-    }
-    
-    func push(sender: UIButton) {
-        testButton.setTitle("停止", forState: .Normal)
-        
-        
-        var timer: NSTimer!
-        
-        func timerInitialized () {
-            timer = NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: Selector("NexPic"), userInfo: nil, repeats: true)
-        }
-        
-    }
-    */
  
     @IBAction func Second(sender: AnyObject) {
     }   
