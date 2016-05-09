@@ -14,39 +14,46 @@ class ViewController: UIViewController {
     
     var playFlag = false
     
+    /// 【変更】　クラスのプロパティとして宣言
+    var timer : NSTimer!
     
     @IBAction func nstimer(sender: AnyObject) {
         
         
         if playFlag{
-    
-            nstimer.setTitle("再生", forState: .Normal)
-    
-            playFlag = false
-          
-            // 処理止める時
             
+            nstimer.setTitle("再生", forState: .Normal)
+            
+            playFlag = false
+            
+            // 処理止める時
             
         } else {
             nstimer.setTitle("停止", forState: .Normal)
-        
+            
             playFlag = true
-       
-            var timer : NSTimer!
+            
             
             timer = NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: Selector("NexPic:"), userInfo: nil, repeats: true)
-                
-                func NexPic(timer: NSTimer) {
-                    // 2秒おきに行う処理
-                }
+            
+            /// 【変更】　不要なのでコメントアウト（もしくは削除）
+            //                func NexPic(timer: NSTimer) {
+            //                    // 2秒おきに行う処理
+            //                }
             
             //処理始める時
             
-            
         }
-        }
-    
+        
     }
+    
+    /// 【変更】　2秒おきに呼び出される関数を作成
+    func NexPic(timer: NSTimer) {
+        // 2秒おきに行う処理
+    }
+
+
+        
     /* var testButton: UIButton!
     func configureButton() {
         // ボタンのタイプを設定して作成
