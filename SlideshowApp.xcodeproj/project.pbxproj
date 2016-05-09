@@ -14,6 +14,10 @@
 		F56DB5721CC5F528006C66AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F56DB5701CC5F528006C66AC /* LaunchScreen.storyboard */; };
 		F56DB57D1CC5F528006C66AC /* SlideshowAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56DB57C1CC5F528006C66AC /* SlideshowAppTests.swift */; };
 		F56DB5881CC5F528006C66AC /* SlideshowAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56DB5871CC5F528006C66AC /* SlideshowAppUITests.swift */; };
+		F573A5F31CCF456100CBEF8A /* baseball.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F573A5F21CCF456100CBEF8A /* baseball.jpg */; };
+		F573A5F51CCF456500CBEF8A /* Soccor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F573A5F41CCF456500CBEF8A /* Soccor.jpg */; };
+		F573A5F71CCF456A00CBEF8A /* Basket.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F573A5F61CCF456A00CBEF8A /* Basket.jpg */; };
+		F573A5F91CCF471800CBEF8A /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F573A5F81CCF471800CBEF8A /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		F56DB5831CC5F528006C66AC /* SlideshowAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlideshowAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F56DB5871CC5F528006C66AC /* SlideshowAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideshowAppUITests.swift; sourceTree = "<group>"; };
 		F56DB5891CC5F528006C66AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F573A5F21CCF456100CBEF8A /* baseball.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = baseball.jpg; sourceTree = "<group>"; };
+		F573A5F41CCF456500CBEF8A /* Soccor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Soccor.jpg; sourceTree = "<group>"; };
+		F573A5F61CCF456A00CBEF8A /* Basket.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Basket.jpg; sourceTree = "<group>"; };
+		F573A5F81CCF471800CBEF8A /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +108,10 @@
 				F56DB5671CC5F528006C66AC /* AppDelegate.swift */,
 				F56DB5691CC5F528006C66AC /* ViewController.swift */,
 				F56DB56B1CC5F528006C66AC /* Main.storyboard */,
+				F573A5F81CCF471800CBEF8A /* ResultViewController.swift */,
+				F573A5F21CCF456100CBEF8A /* baseball.jpg */,
+				F573A5F41CCF456500CBEF8A /* Soccor.jpg */,
+				F573A5F61CCF456A00CBEF8A /* Basket.jpg */,
 				F56DB56E1CC5F528006C66AC /* Assets.xcassets */,
 				F56DB5701CC5F528006C66AC /* LaunchScreen.storyboard */,
 				F56DB5731CC5F528006C66AC /* Info.plist */,
@@ -230,8 +242,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F56DB5721CC5F528006C66AC /* LaunchScreen.storyboard in Resources */,
+				F573A5F31CCF456100CBEF8A /* baseball.jpg in Resources */,
 				F56DB56F1CC5F528006C66AC /* Assets.xcassets in Resources */,
+				F573A5F71CCF456A00CBEF8A /* Basket.jpg in Resources */,
 				F56DB56D1CC5F528006C66AC /* Main.storyboard in Resources */,
+				F573A5F51CCF456500CBEF8A /* Soccor.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +273,7 @@
 			files = (
 				F56DB56A1CC5F528006C66AC /* ViewController.swift in Sources */,
 				F56DB5681CC5F528006C66AC /* AppDelegate.swift in Sources */,
+				F573A5F91CCF471800CBEF8A /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +498,7 @@
 				F56DB58E1CC5F528006C66AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F56DB58F1CC5F528006C66AC /* Build configuration list for PBXNativeTarget "SlideshowAppTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +507,7 @@
 				F56DB5911CC5F528006C66AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F56DB5921CC5F528006C66AC /* Build configuration list for PBXNativeTarget "SlideshowAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +516,7 @@
 				F56DB5941CC5F528006C66AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
