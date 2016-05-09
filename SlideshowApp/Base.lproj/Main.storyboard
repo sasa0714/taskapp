@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -55,8 +55,10 @@
                                 <rect key="frame" x="180" y="39" width="240" height="128"/>
                                 <gestureRecognizers/>
                                 <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="128" id="5Ci-l5-vLK"/>
                                     <constraint firstAttribute="width" constant="240" id="9Dt-Nm-HSM"/>
                                     <constraint firstAttribute="height" constant="128" id="Fnu-SZ-OJn"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="189" id="kTr-gb-Ug4"/>
                                 </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="xWv-dS-eQb" appends="YES" id="iUB-L3-3f7"/>
@@ -66,8 +68,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="yYV-gb-qCd" firstAttribute="centerX" secondItem="U2k-Wa-Oon" secondAttribute="centerX" id="7Vt-Cb-OV2"/>
+                            <constraint firstItem="rdv-Sp-4C6" firstAttribute="centerX" secondItem="U2k-Wa-Oon" secondAttribute="centerX" id="8t5-pJ-Cv3"/>
                             <constraint firstItem="rdv-Sp-4C6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BvI-L4-IdH"/>
+                            <constraint firstItem="U2k-Wa-Oon" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J8G-wG-q8E"/>
+                            <constraint firstItem="U2k-Wa-Oon" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JPC-3s-kqB"/>
                             <constraint firstItem="rdv-Sp-4C6" firstAttribute="top" secondItem="yYV-gb-qCd" secondAttribute="bottom" constant="8" id="Lj5-OU-aly"/>
+                            <constraint firstItem="nqe-aN-7jM" firstAttribute="centerX" secondItem="U2k-Wa-Oon" secondAttribute="centerX" id="fMW-vI-lwv"/>
                             <constraint firstItem="nqe-aN-7jM" firstAttribute="top" secondItem="rdv-Sp-4C6" secondAttribute="bottom" constant="8" id="ogF-ff-cKJ"/>
                             <constraint firstItem="yYV-gb-qCd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="roN-7b-7js"/>
                             <constraint firstItem="U2k-Wa-Oon" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="spS-2W-9oQ"/>

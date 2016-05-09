@@ -36,20 +36,17 @@ class ViewController: UIViewController {
             
             timer = NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: Selector("NexPic:"), userInfo: nil, repeats: true)
             
-            /// 【変更】　不要なのでコメントアウト（もしくは削除）
             //                func NexPic(timer: NSTimer) {
             //                    // 2秒おきに行う処理
             //                }
             
             //処理始める時
             
+            
+            // 【変更】　大括弧が1つ多いので削除
+            //        }
         }
         
-    }
-    
-    /// 【変更】　2秒おきに呼び出される関数を作成
-    func NexPic(timer: NSTimer) {
-        // 2秒おきに行う処理
     }
 
 
