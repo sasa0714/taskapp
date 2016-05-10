@@ -25,6 +25,9 @@
                                     <constraint firstAttribute="height" constant="30" id="YBX-OY-lOS"/>
                                 </constraints>
                                 <state key="normal" title="戻る"/>
+                                <connections>
+                                    <action selector="ReverseNo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VqL-UD-E1Y"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqe-aN-7jM">
                                 <rect key="frame" x="268" y="260" width="65" height="30"/>
@@ -44,6 +47,9 @@
                                     <constraint firstAttribute="height" constant="30" id="tSm-0c-T8T"/>
                                 </constraints>
                                 <state key="normal" title="進む"/>
+                                <connections>
+                                    <action selector="didpushNextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ai6-kV-1tG"/>
+                                </connections>
                             </button>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="U2k-Wa-Oon">
                                 <rect key="frame" x="180" y="39" width="240" height="128"/>
@@ -81,7 +87,6 @@
                         </connections>
                     </view>
                     <connections>
-                        <outlet property="NexPic" destination="7Vt-Cb-OV2" id="6Cf-Yo-rzz"/>
                         <outlet property="Pic1" destination="U2k-Wa-Oon" id="DN3-md-duU"/>
                         <outlet property="label" destination="U2k-Wa-Oon" id="TRk-Qy-AQx"/>
                         <outlet property="nstimer" destination="nqe-aN-7jM" id="Io0-3X-WH4"/>
