@@ -47,9 +47,6 @@
                                     <constraint firstAttribute="height" constant="30" id="tSm-0c-T8T"/>
                                 </constraints>
                                 <state key="normal" title="進む"/>
-                                <connections>
-                                    <action selector="NexPic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nau-yZ-wdv"/>
-                                </connections>
                             </button>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="U2k-Wa-Oon">
                                 <rect key="frame" x="180" y="39" width="240" height="128"/>
@@ -87,7 +84,9 @@
                         </connections>
                     </view>
                     <connections>
+                        <outlet property="NexPic" destination="7Vt-Cb-OV2" id="6Cf-Yo-rzz"/>
                         <outlet property="Pic1" destination="U2k-Wa-Oon" id="DN3-md-duU"/>
+                        <outlet property="ReverseNo" destination="rdv-Sp-4C6" id="APn-f2-DGh"/>
                         <outlet property="label" destination="U2k-Wa-Oon" id="TRk-Qy-AQx"/>
                         <outlet property="nstimer" destination="nqe-aN-7jM" id="Io0-3X-WH4"/>
                         <segue destination="ceo-5F-QYi" kind="show" identifier="ImageView" id="xck-2P-0pd"/>

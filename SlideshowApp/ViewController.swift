@@ -36,6 +36,8 @@ class ViewController: UIViewController {
             
             timer = NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: Selector("NexPic:"), userInfo: nil, repeats: true)
             
+            
+            
             //                func NexPic(timer: NSTimer) {
             //                    // 2秒おきに行う処理
             //                }
@@ -46,37 +48,39 @@ class ViewController: UIViewController {
         
     }
 
- 
     @IBAction func Second(sender: AnyObject) {
     }   
 
+    
+    
+    @IBOutlet weak var ReverseNo: UIButton!
+    
     @IBAction func ReverseNo(sender: AnyObject) {
-
+       if !playFlag {
+        
         imageNo -= 1
         if imageNo == -1{
         imageNo = 2}
         
         let name = nameArray[imageNo] // imageNoに対応するファイルの名前を取り出し
-        
         let image = UIImage(named: name)
-        
         Pic1.image = image
-    }
-    
-    @IBAction func NexPic(sender: AnyObject) {
-    
-            print ("test")
-    
-        imageNo += 1
-        if imageNo == 3{
-        imageNo = 0
         }
         
+    }
+    
+
+    @IBAction func NexPic(sender: AnyObject) {
+        if !playFlag {
+
+        imageNo += 1
+        if imageNo == 3{
+        imageNo = 0}
+        
         let name = nameArray[imageNo] // imageNoに対応するファイルの名前を取り出し
-        
         let image = UIImage(named: name)
-        
         Pic1.image = image
+        }
     }
 
     @IBOutlet weak var label: UIImageView!
@@ -96,9 +100,7 @@ class ViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     
         let name = nameArray[imageNo] // imageNoに対応するファイルの名前を取り出し
-        
         let image = UIImage(named: name)
-
         let vc = segue.destinationViewController as! ResultViewController
         
         vc.image = image
@@ -113,7 +115,6 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     
         nstimer.setTitle("再生", forState: .Normal)
-
         
         let name = nameArray[imageNo] // imageNoに対応するファイルの名前を取り出し
         
