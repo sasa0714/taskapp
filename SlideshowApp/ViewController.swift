@@ -70,18 +70,25 @@ class ViewController: UIViewController {
     }
     
 
-    @IBAction func NexPic(sender: AnyObject) {
+    @IBAction func didpushNextButton(sender: AnyObject) {
+        //タイマーが動いているかの確認を行う
         if !playFlag {
-
+            //動いていたらnexPicを呼び出す
+            NexPic(sender)
+        }
+    }
+    func NexPic(sender: AnyObject) {
+        
         imageNo += 1
         if imageNo == 3{
-        imageNo = 0}
+            imageNo = 0}
         
         let name = nameArray[imageNo] // imageNoに対応するファイルの名前を取り出し
         let image = UIImage(named: name)
         Pic1.image = image
-        }
+        
     }
+
 
     @IBOutlet weak var label: UIImageView!
     
